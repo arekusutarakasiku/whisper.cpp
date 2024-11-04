@@ -62,6 +62,11 @@ func (context *context) IsMultilingual() bool {
 	return context.model.IsMultilingual()
 }
 
+func (context *context) GetLangId() bool {
+        return context.model.GetLangId()
+}
+
+
 // Get language
 func (context *context) Language() string {
 	id := context.params.Language()
