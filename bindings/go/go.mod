@@ -1,4 +1,4 @@
-module github.com/ggerganov/whisper.cpp/bindings/go
+module github.com/arekusutarakasiku/whisper.cpp/bindings/go
 
 go 1.23
 
