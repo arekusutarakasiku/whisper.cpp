@@ -62,8 +62,8 @@ func (context *context) IsMultilingual() bool {
 	return context.model.IsMultilingual()
 }
 
-func (context *context) GetLangId() int {
-        return context.model.GetLangId()
+func (context *context) GetLangStr() string {
+        return context.model.GetLangStr()
 }
 
 

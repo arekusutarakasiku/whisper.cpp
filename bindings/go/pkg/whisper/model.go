@@ -70,8 +70,8 @@ func (model *model) IsMultilingual() bool {
 }
 
 // Return detected lang id
-func (model *model) GetLangId() int {
-        return model.ctx.Whisper_full_lang_id() 
+func (model *model) GetLangStr() string {
+	return  whisper.Whisper_lang_str(model.ctx.Whisper_full_lang_id())
 }
 
 
