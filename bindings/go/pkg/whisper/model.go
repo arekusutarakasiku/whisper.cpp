@@ -69,6 +69,12 @@ func (model *model) IsMultilingual() bool {
 	return model.ctx.Whisper_is_multilingual() != 0
 }
 
+// Return detected lang id
+func (model *model) GetLangId() bool {
+        return model.ctx.Whisper_full_lang_id() != 0
+}
+
+
 // Return all recognized languages. Initially it is set to auto-detect
 func (model *model) Languages() []string {
 	result := make([]string, 0, whisper.Whisper_lang_max_id())
